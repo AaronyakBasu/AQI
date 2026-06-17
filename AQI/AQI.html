@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Quality Monitor Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AQI deKho</title>
+    <link rel="stylesheet" href="AQI/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 <body>
+<div>
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="AQI/AQI.html">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</div>
     <div class="container">
         <header>
             <h1>Air Quality Monitor</h1>
@@ -24,7 +36,6 @@
             </div>
 
             <div class="status-bar">
-                <button id="trendlineBtn" class="trendline-btn">&#8599; Trendline</button>
                 <span id="lastUpdate">Loading data...</span>
                 <button id="refreshBtn" class="refresh-btn">&#8635; Refresh</button>
             </div>
@@ -134,6 +145,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="AQI/script.js"></script>
 </body>
 </html>
