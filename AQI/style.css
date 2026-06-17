@@ -144,7 +144,6 @@ header h1 {
 
 .refresh-btn:hover {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-    transform: rotate(180deg) scale(1.05);
     box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
 }
 
