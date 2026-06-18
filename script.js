@@ -390,3 +390,11 @@ function updateLastUpdateTime(timestamp) {
 
     document.getElementById('lastUpdate').textContent = `Last update: ${timeAgo}`;
 }
+const heroButton = document.querySelector(".hero-button");
+window.addEventListener("scroll", () => {
+if (window.pageYOffset > 100) {
+heroButton.classList.add("active");
+} else {
+heroButton.classList.remove("active");
+}
+});
